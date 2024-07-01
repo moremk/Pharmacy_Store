@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pharmacy Store</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+  
+  .demo
+  {
+  background: linear-gradient(to right,rgb(3, 99, 3),rgb(87, 202, 87),rgb(37, 255, 37));
+  width:1370px;
+  height:75px;
+  }
+  nav{
+  margin-top:20px;
+  float:right;
+  
+  
+  }
+  a{
+  text-decoration:none;
+  color:white;
+  font-size:20px;
+  margin-right:20px;
+  font-family:bold; 
+  }
+  .pharm{
+  background-color:#198754;
+  }
+  .store{
+  background:linear-gradient(to right,rgb(3, 99, 3),rgb(87, 202, 87),rgb(37, 255, 37));
+  height:400px;
+  text-align:center;
+  font-family:bold;
+  margin-top:0px;
+  text-shadow: 2px 2px white;
+  }
+  .rot{
+  text-align:center;
+  font-family:bold;
+  margin-top:0px;
+  text-shadow: 2px 2px rgb(0, 128, 255);
+  margin-top:-100px;
+  
+  }
+  @media only screen and (min-width: 400px) {
+  .demo,.pharm,.store{
+    width:100%;
+    display:block;
+  }
+}
+</style>
+  <body>
+    <div class="demo">
+     <img src="/image/medico.jpg" style="width:60px;height:60px;border-radius:50px;margin-top:5px;">
+    <lable1 style="color:white;font-size:25px;font-family:bold;margin-top:50px;">Medica</lable1><lable2 style="margin-top:50px;color:rgb(0, 128, 255);font-size:25px;font-family:bold">Shop</lable2>
+    
+    <nav>
+       <a th:href="@{/index}">HOME</a>
+       <a th:href="@{/demo}">SHOP</a>
+       <a th:href="@{/contact}">CONTACT</a>   
+    </nav>   
+    </div>
+    <div class="pharm">
+    <img src="/image/rathi.png" style="width:700px;height:530px;float:right;">
+    </div>
+    <div class="store">
+    </div>
+    <div class="rot">
+    <lable3 style="color:rgb(64, 0, 64);font-size:30px;margin-top:300px;">WELCOME TO QUALITY</lable3><br>
+    <lable4 style="color:rgb(64, 0, 64);font-size:30px;">Pharmaceutical Product</lable4><br>
+    <a th:href="@{/demo}"><input type="button" class="btn btn-primary" value="SHOP NOW" style="margin-top:20px;width:100px;"></a>
+    </div>
+  </body>
+</html>
